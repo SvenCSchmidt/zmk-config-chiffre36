@@ -9,6 +9,11 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+
+    chosen {
+        zmk,matrix_transform = &transform_36key;
+    };
+
     behaviors {
         bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
