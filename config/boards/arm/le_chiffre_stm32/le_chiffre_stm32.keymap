@@ -19,10 +19,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <170>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30>;
             bindings = <&kp>, <&kp>;
         };
         hmls: homerow_mod_lshift {
@@ -31,8 +30,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             quick-tap-ms = <0>;
-            flavor = "balanced";
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24>;
+            flavor = "tap-unless-interrupted";
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30>;
             bindings = <&kp>, <&kp>;
         };
         hmrs: homerow_mod_rshift {
@@ -41,7 +40,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             quick-tap-ms = <0>;
-            flavor = "balanced";
+            flavor = "tap-unless-interrupted";
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24>;
             bindings = <&kp>, <&kp>;
         };
         hmg: homerow_mod_gui {
